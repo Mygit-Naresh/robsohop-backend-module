@@ -38,7 +38,7 @@ resource "null_resource" "service_config" {
     inline = [
        
        "sudo chmod +x /tmp/bootstrap.sh",
-       "sh /tmp/bootstrap.sh ${var.tags.service} ${var.environment}"
+       "sh /tmp/bootstrap.sh ${var.tags.service} ${var.environment} ${var.app_version}"
   
   ]
   }

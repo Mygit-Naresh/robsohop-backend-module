@@ -56,3 +56,6 @@ variable "app_listener_arn" {
 variable "port" {
   
 }
+variable "app_version" {
+  
+}
