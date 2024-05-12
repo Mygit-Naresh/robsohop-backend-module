@@ -151,7 +151,7 @@ resource "aws_lb_target_group" "service_tg" { // Target Group service
  
  health_check {
     path                = "/health"
-    port                = 80
+    port                = 8080
     protocol            = "HTTP"
     healthy_threshold   = 2
     unhealthy_threshold = 2
